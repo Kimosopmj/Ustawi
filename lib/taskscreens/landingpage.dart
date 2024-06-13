@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class LandingPage extends StatelessWidget {
+  const LandingPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -8,11 +10,11 @@ class LandingPage extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(20.0),
               child: Column(
                 children: [
-                  SizedBox(height: 50),
-                  Text(
+                  const SizedBox(height: 50),
+                  const Text(
                     'Welcome to MindCare',
                     style: TextStyle(
                       fontSize: 32,
@@ -21,30 +23,30 @@ class LandingPage extends StatelessWidget {
                     ),
                     textAlign: TextAlign.center,
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Image.asset(
                       'assets/welcome_image.png'), // Add your image asset here
-                  SizedBox(height: 20),
-                  Text(
+                  const SizedBox(height: 20),
+                  const Text(
                     'Your personal mental health companion. Track your mood, get personalized insights, and access a variety of mental health resources.',
                     style: TextStyle(fontSize: 18, color: Colors.black54),
                     textAlign: TextAlign.center,
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   FeaturesSection(),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   ElevatedButton(
                     onPressed: () {
                       // Navigate to another screen or perform an action
                     },
-                    child: Text('Get Started'),
                     style: ElevatedButton.styleFrom(
                       padding:
-                          EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-                      textStyle: TextStyle(fontSize: 18),
+                          const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                      textStyle: const TextStyle(fontSize: 18),
                     ),
+                    child: const Text('Get Started'),
                   ),
-                  SizedBox(height: 50),
+                  const SizedBox(height: 50),
                 ],
               ),
             ),
@@ -100,22 +102,22 @@ class FeatureItem extends StatelessWidget {
       child: Row(
         children: [
           Icon(icon, size: 40, color: Colors.blueAccent),
-          SizedBox(width: 20),
+          const SizedBox(width: 20),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   title,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Text(
                   description,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 16,
                     color: Colors.black54,
                   ),

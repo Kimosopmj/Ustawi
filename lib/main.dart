@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ustawi/taskscreens/landingpage.dart';
+import 'package:myapp/taskscreens/landingpage.dart';
 
 void main() {
   runApp(MentalHealthApp());
