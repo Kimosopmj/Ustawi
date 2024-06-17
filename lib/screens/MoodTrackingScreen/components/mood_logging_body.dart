@@ -48,6 +48,7 @@ class MoodLoggingBody extends StatelessWidget {
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
+              //This will handle the login button
                   _handleLogin(context);
                 },
                 child: const Text('Login'),
@@ -55,6 +56,7 @@ class MoodLoggingBody extends StatelessWidget {
               const SizedBox(height: 10),
               TextButton(
                 onPressed: () {
+              //This will handle the forget password button
                   _handleForgotPassword(context);
                 },
                 child: const Text('Forgot Password?'),
@@ -62,6 +64,7 @@ class MoodLoggingBody extends StatelessWidget {
               const SizedBox(height: 10),
               TextButton(
                 onPressed: () {
+              //This will handle the signup button
                   _handleSignUp(context);
                 },
                 child: const Text('Sign Up'),
@@ -91,7 +94,7 @@ class MyApp extends StatelessWidget {
             ),
         '/home': (context) => Scaffold(
               appBar: AppBar(title: Text('Home')),
-              body: Center(child: Text('Welcome to Home Page!')),
+              body: Center(child: Text('Welcome to Health Partner')),
             ),
         '/forgot_password': (context) => Scaffold(
               appBar: AppBar(title: Text('Forgot Password')),
